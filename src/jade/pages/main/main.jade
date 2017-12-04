@@ -1,0 +1,374 @@
+doctype html
+html(lang="ru")
+  include ../../head.jade
+  body
+    .preload-overlay
+    include ../../header.jade
+
+    section.WhyWe.pdng
+      .wrap-WhyWe
+        h2 Наши Достоинства
+        p.subtitle Сервис по чистке о обслуживанию канализационных труб и водоотведения.<br/> Мы делаем только так, как сделали бы для себя.
+        .content
+          nav.links
+            a.contrl(href="#" id="quality")
+              span Качество
+            a.contrl.active(href="#" id="guarantee")
+              span Гарантия
+            a.contrl(href="#" id="exploration")
+              span Многолетний стаж
+          .circles-desc
+            .circle-wrapp
+              .slide-content
+                .slide-item(data-id-text="quality")
+                  .wrapp-content
+                    Качественно выполненная работа всегда приносит удовольствие нам и нашим клиентам.
+                .slide-item.active.show(data-id-text="guarantee")
+                  .wrapp-content
+                    Мы&nbsp;уверены в&nbsp;качестве своих услуг, поэтому предоставляем гарантию, срок которой зависит от&nbsp;вида работ.
+                .slide-item(data-id-text="exploration")
+                  .wrapp-content
+                    Здесь текст, который будет выводиться с картинкой опыта работы компании.
+        .bg-slide-img
+          .wrapp-bg-slide-img.dev(data-id-img="quality")
+            .item(style="background: url(src/img/slider2/item3.jpg) left top no-repeat; background-size: cover; background-position: 0px -2rem;")
+          .wrapp-bg-slide-img.current.first-item(data-id-img="guarantee")
+            .item(style="background: url(src/img/slider2/primenenie-sredstv-ot-zasorov.jpg) left top no-repeat; background-size: cover; background-position: -8rem 0px;")
+          .wrapp-bg-slide-img.dev(data-id-img="exploration")
+            .item(style="background: url(src/img/slider2/127.jpg) left top no-repeat; background-size: cover; background-position: 0px 0px;")
+        .departure
+          h3 Выезд бригады в течение 10 минут
+
+    section.Service.js-scroll-animate.pdng
+      .wrap-Service
+        h2 Услуги
+        p.subtitle Мы готовы быстро и качественно <br/>оказать вам следующие услуги:
+        .content
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/zasor-v-vannoj.jpg); background-size: cover; background-position: top;")
+              h5 Устранение засоров
+              .info                
+                p Наиболее частой причиной закупорки труб является попадание постороннего предмета в систему водоотведения.                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000
+                i
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/chistka-kanalizaci.jpg); background-size: cover; background-position: top;")
+              h5 Чистка канализаций
+              .info                
+                p Исправная работа канализации обеспечивает своевременную эффективную эвакуацию сточных вод.                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000
+                i
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/karcher-dlya-prochistki-trub.jpg); background-size: cover; background-position: top;")
+              h5 Чистка ливневых труб
+              .info                
+                p Для благоустройства участка важно позаботиться об эффективном отводе избытка вод, который наблюдается в...                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000
+                i
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/zasor-v-vannoj.jpg); background-size: cover; background-position: top;")
+              h5 Устранение засоров
+              .info                
+                p Наиболее частой причиной закупорки труб является попадание постороннего предмета в систему водоотведения.                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000 руб
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/chistka-kanalizaci.jpg); background-size: cover; background-position: top;")
+              h5 Чистка канализаций
+              .info                
+                p Исправная работа канализации обеспечивает своевременную эффективную эвакуацию сточных вод.                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000 руб
+          .event-item
+            .event-content
+              .wrap-img(style="background: url(../src/img/events/karcher-dlya-prochistki-trub.jpg); background-size: cover; background-position: top;")
+              a(href="#" class="link-event") Чистка ливневых труб
+              .info                
+                p Для благоустройства участка важно позаботиться об эффективном отводе избытка вод, который наблюдается в...                
+                a.srv(data-src="#call-back-form" href="javascript:;" data-fancybox data-call-back="service") Заказать
+              .price
+                от 10000 руб
+        .open-all-service
+          a(href="#") Перейти к странице с услугами
+    
+    section.Type.js-scroll-animate.pdng
+      .wrap-Type
+        h2 Способы прочистки
+        p.subtitle Современные способы прочиски<br> позволяют справиться с любой сложностью засора
+        .outerType
+          .typeItem
+            .image
+              img(src="src/img/type/mehanicheski-sposob-prochistki.jpg" alt="Механический способ прочистки")
+            .content
+              h3.title Механическая прочистка
+              p.description Казалось&nbsp;бы самый распространенный и&nbsp;простой способ удаления засоров. Не&nbsp;требуется профессиональное оборудование и&nbsp;специальных знаний. Однако мы&nbsp;используем специльное оборудование, которое с&nbsp;лёгкостью удалит засор из&nbsp;труб не&nbsp;принося им&nbsp;повреждений.
+          .typeItem
+            .image
+              img(src="src/img/type/gidrodinamicheskaya-prochistka.jpg" alt="Гидродинамическая прочистка")
+            .content
+              h3.title Гидродинамическая промывка
+              .description
+                p Преимущества данного метода:
+                ul
+                  li Занимает не много времени,
+                  li Качество, за счет поступления высокого давления воды, в трубах не остается никаких отложений,
+                  li Эффективность, геометрия трубы не влияет на качество и не препятствует прочистке.
+          .typeItem
+            .image
+              img(src="src/img/type/pnevmaticheskiy-vantuz-so-smennymi-nasadkami.jpg" alt="Пневматический способ прочистки")
+            .content
+              h3.title Пневматический способ прочистки
+              p.description Эффект достигается за&nbsp;счет мощного выброса сжатого воздуха до&nbsp;400&nbsp;атмосфер, что приводит к&nbsp;разрушению засоров. Данный способ способен чистить трубы из&nbsp;различных материалов диаметром до&nbsp;300&nbsp;мм.
+          .typeItem
+            .image
+              img(src="src/img/type/teleinspekciya-trub.jpg" alt="Телеинспекция труб")
+            .content
+              h3.title Телеинспекция труб
+              .description
+                p Проталкиваемая система телеинспекции дает возможность:
+                ul
+                  li Записывать на цифровой носитель видео, расстояние, время, а также текстовые комментарии,
+                  li Регулировать уровень освещения,
+                  li Проталкиваемая телеинспекция используется на трубопроводах, обследование которых невозможно выполнить роботизированными системами по причине их небольшого диаметра.
+          .typeItem
+            .image
+              img(src="src/img/type/kak-razmorozit-kanalizaciyu.jpg" alt="Разморозка труб")
+            .content
+              h3.title Разморозка труб
+              .description
+                p С&nbsp;наступлением зимних холодов одной из&nbsp;актуальных проблем, является промерзание водопроводных и&nbsp;канализационных труб. Устраняем лед при помощи: горячей воды, электрического тока, парогенератора.
+                
+    section.Works.js-scroll-animate.pdng
+      .wrap-Works
+        h2 Как мы работаем
+        p.subtitle К успешнову и качественному выполнению работы<br/> приводит точная последовательность дейсвий:
+        .content
+          .how-works
+            .wrap
+              h3 Исполнение работ
+              ul
+                li.call
+                  span Звонок
+                    i
+                li.problem
+                  span Выявление проблемы
+                    i
+                li.calc
+                  span Рассчет стоимости
+                    i
+                li.master
+                  span Выезд мастера и работа
+                    i
+                li.payment
+                  span Оплата
+                    i
+                li.profit
+                  span Профит
+                    i
+              span.down-arrow
+          .rigth-parall-image
+            .important
+              .wrap-important
+                span Важно
+                p.subtitle Работу выполняют только квалифицорованные специальсты<br/> при помощи современного оборудования
+            .wrap-parall-image              
+              iframe(src="https://www.youtube.com/embed/QUXZEgoLzbY" allowfullscreen)
+        h3.equipment Наше оборудование
+        .wrap-equipment
+          .eq-item
+            img(src="src/img/equipment/9380b63f5a9ce86cc624b0ebf96ae682fe0574f0.png" alt="")
+            p Электро-механическая прочистная машина ROTHENBERGER R750
+          .eq-item
+            img(src="src/img/equipment/1336385571_591_resized.png" alt="")
+            p Система телеинспекции SeeSnake Compact
+          .eq-item
+            img(src="src/img/equipment/18a4bc241d31357b3eb66d582a4c372d07b6a270.png" alt="")
+            p Электро-механическая прочистная машина RIDGID k-45
+          .eq-item
+            img(src="src/img/equipment/94ba58f8d75a4c464155838bfb4ee658c4f6c598.png" alt="")
+            p Мойка высокого давления Kranzle Profi 160 Tst
+          .eq-item
+            img(src="src/img/equipment/495970.png" alt="")
+            p Каналопромывочные машины 180
+        h3.plan-service Плановое обслуживание. Работаем круглосуточно без перерывов и выходных! 
+
+    section.Discont
+      .wrap-Discont
+        .discont-title
+          h2 Скидки для многодетных семей и пенсионеров - 10%
+          p *Чтобы вызвать мастера нажмите на&nbsp;кнопки &laquo;Вызвать мастера&raquo; или &laquo;Заказать&raquo;, или позвоните нам по&nbsp;телефону&nbsp;+7 (495) 9224044
+
+    section.BeforeAfter.js-scroll-animate.pdng
+      .wrap-BeforeAfter
+        h2 Резульат работы
+        p.subtitle Краткое описание для блока результат работы. <br> Здесь может быть какая то рекомендация или ещё что нибудь
+        .content
+          .circle-before
+            h3 До
+            .wrap-bg
+              .image-before(style="background: url(/src/img/BeforeAfter/before.jpg) no-repeat;background-size: cover;background-position-x: -8rem;")
+          .circle-after
+            h3 После
+            .wrap-bg
+              .image-after(style="background: url(/src/img/BeforeAfter/after.jpg) no-repeat;background-size: cover;background-position: -6rem 0;")
+
+    section.WhyWorks.pdng
+      .wrap-WhyWorks
+        h2 С кем мы работаем
+        p.subtitle Текст, для краткого описания того, <br> как и с кем мы раньше работали.
+        .content
+          ul.bxslider
+            li
+              img(src="/src/img/WhyWorks/logo-cw.png" alt="Ресторан Сэлфи")
+              h3 Ресторан "Сэлфи"
+            li
+              img(src="/src/img/WhyWorks/chaihana.png" alt="Чайхана#1")
+              h3 "Чайхана#1"
+            li
+              img(src="/src/img/WhyWorks/logo-print.png" alt="ТСЖ ЖК Зодиак")
+              h3 ТСЖ ЖК "Зодиак"
+            li
+              img(src="/src/img/WhyWorks/bilion.png" alt="Союз-биллион (Томилино)")
+              h3 Союз-биллион (Томилино)
+            li
+              img(src="/src/img/WhyWorks/bk-logo.png" alt="Бургер Кинг")
+              h3 Бургер Кинг
+            li
+              img(src="/src/img/WhyWorks/tanuki.png" alt="Тануки")
+              h3 Тануки
+            li
+              img(src="/src/img/WhyWorks/enc.png" alt="Эндокринологический научный центр")
+              h3 Эндокринологический научный центр
+            li
+              img(src="/src/img/WhyWorks/Akademia_FSB.png" alt="Академия ФСБ")
+              h3 Академия ФСБ
+            li
+              img(src="/src/img/WhyWorks/buktom.png" alt="БутКом")
+              h3 БутКом
+            li
+              img(src="/src/img/WhyWorks/ushan.svg" alt="Ашан")
+              h3 Ашан
+    
+    
+    section.Gallery.js-scroll-animate.pdng
+      .wrap-Gallery
+        h2 Фотоотчет
+        p.subtitle Текст, для краткого описания галереи, <br> тут может быть пожелание или предложение.
+        .content
+          ul
+            li
+              a(href="/src/img/gallery/DSC05542.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05542.JPG")
+            li
+              a(href="/src/img/gallery/DSC05543.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05543.JPG")
+            li
+              a(href="/src/img/gallery/DSC05544.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05544.JPG")
+            li
+              a(href="/src/img/gallery/DSC05545.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05545.JPG")
+            li
+              a(href="/src/img/gallery/DSC05546.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05546.JPG")
+            li
+              a(href="/src/img/gallery/DSC05547.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05547.JPG")
+            li
+              a(href="/src/img/gallery/DSC05548.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05548.JPG")
+            li
+              a(href="/src/img/gallery/DSC05549.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05549.JPG")
+            li
+              a(href="/src/img/gallery/DSC05550.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05550.JPG")
+            li
+              a(href="/src/img/gallery/DSC05551.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05551.JPG")
+            li
+              a(href="/src/img/gallery/DSC05552.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05552.JPG")
+            li
+              a(href="/src/img/gallery/DSC05553.JPG" class="fancybox")
+                img(src="/src/img/gallery/DSC05553.JPG")
+    
+    
+    
+    section.Feedback.js-scroll-animate.pdng
+      .wrap-Feedback
+        h2 Отзывы наших Клиентов
+        p.subtitle Текст, для краткого описания, <br> тут может быть пожелание или предложение.
+        .content
+          ul
+            li.feed-item
+              p.feed У меня сделан новый ремонт с перепланировкой. Было много мороки из-за этого. В результате ремонта увеличилось расстояние от стояка до мойки и прочистить трубу обычным способом нереально! Ребята приехали и решили вопросы быстро и качественно.  Благодарю вас!
+              p.autor Виктория Л. (Краснодар)
+            li.feed-item
+              p.feed На загородной даче забилась труба. Позвонил в сервис, на следующий день приехали и сделали все быстро и аккуратно. Теперь канализация работает как новая. Спасибо сотрудникам компании за оперативность и профессионализм.
+              p.autor Алексей Р. (Краснодар)
+            li.feed-item
+              p.feed Когда понадобилось срочно решить проблему засора трубы, то я позвонила специалистам. Приехали быстро, прочистили трубу своим оборудованием. Цены приятно удивили. Рассказала  друзьям, которые тоже остались довольны. Буду еще вызывать мастеров если понадобится, так как муж часто в командировке. Большое спасибо.
+              p.autor Алёна В. (Краснодар)
+            li.feed-item
+              p.feed У нас семейный бизнес — имеем небольшой отель. Сотрудничаем с ребятами из компании Каналсервис24. Благодарим за своевременную и профессиональную помощь по очистке канализации в отеле. Рекомендуем!
+              p.autor Дмитрий И. (Краснодар)
+    
+    section.WhereMaps.js-scroll-animate.pdng
+      .wrap-WhereMaps
+        h2 Где мы находимся
+        p.subtitle Вы можете как позвонить нам на номер +7 (495) 9224044,<br/>написать нам письмо, так и приехать к нам в офис
+        #maps(style="width: 1200px; height: 650px")
+          .layout-right
+            h3.adres Нашы адреса:
+            ul
+              li                
+                p
+                  Варшавское шоссе 164
+              li
+                p
+                  ул. Авиамоторная 5
+              li
+                p
+                  ул. Смольная 24
+              li
+                p 
+                  Ленинский проспект 88
+            h3.form Форма обратной связи
+            .form-wrapp
+              form
+                input(type="text" name="fio" placeholder="Ваше ФИО" class="fio-place")
+                input(type="email" name="email" placeholder="Ваш e-mail" class="email-place")
+                textarea(name="text" placeholder="Ваше сообщение" class="text-place")
+                input(type="submit" value="Отправить" name="sbmtbtn" id="submit-btn" class="sbmt")
+                label *Наш специалист свяжется с вами в ближайшее время
+    footer
+      .wrap-footer
+        Редизайн 2017г <br/>  Связаться с нами можно по телефонам: +7 (495) 9224044,  +7 (985) 9224044<br/> Сайт в разработке
+        span
+          a(href="email:madestoff@yandex.ru" target="_blank") Madest
+    #call-back-form
+      .wrap-call-back
+        p Оставьте свои данные
+        input(type="hidden" name="call-back")
+        input(type="text" name="username" id="username" placeholder="ФИО")
+        input(type="text" name="telephone" id="telephone" placeholder="Номер телефона")
+        textarea(name="comment" id="comment" placeholder="Опишите проблему")
+        input(type="submit" value="Отправить")
+    .back_to_top(title="Наверх")
+      div
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="dist/build.min.js")

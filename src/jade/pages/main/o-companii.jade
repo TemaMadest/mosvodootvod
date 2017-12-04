@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+  include ../../head.jade
+  body
+    .preload-overlay
+    include ../../header.jade
+    
+    section.Inwork.pdng
+      .wrap-Inwork
+          h2 Раздел находится <br/>в разработке
+          p.subtitle Вы можете перейти на другую страницу, <br/> также можете позвонить нам по тел. +7 (495) 9224044,  +7 (985) 9224044
+    
+    footer
+      .wrap-footer
+        Редизайн 2017г <br/>  Связаться с нами можно по телефонам: +7 (495) 9224044,  +7 (985) 9224044<br/> Сайт в разработке
+        span Сайт разработан Madest'ом
+    #call-back-form
+      .wrap-call-back
+        p Оставьте свои данные
+        input(type="hidden" name="call-back")
+        input(type="text" name="username" id="username" placeholder="ФИО")
+        input(type="text" name="telephone" id="telephone" placeholder="Номер телефона")
+        textarea(name="comment" id="comment" placeholder="Опишите проблему")
+        input(type="submit" value="Отправить")
+    .back_to_top(title="Наверх")
+      div
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+    script(src="/dist/build.min.js")
