@@ -331,7 +331,7 @@ html(lang="ru")
       .wrap-WhereMaps
         h2 Где мы находимся
         p.subtitle Вы можете как позвонить нам на номер +7 (495) 9224044,<br/>написать нам письмо, так и приехать к нам в офис
-        #maps(style="width: 1200px; height: 650px")
+        #maps(style="width: 1200px; height: 1000px")
           .layout-right
             h3.adres Нашы адреса:
             ul
@@ -353,8 +353,23 @@ html(lang="ru")
                 input(type="text" name="fio" placeholder="Ваше ФИО" class="fio-place")
                 input(type="email" name="email" placeholder="Ваш e-mail" class="email-place")
                 textarea(name="text" placeholder="Ваше сообщение" class="text-place")
-                input(type="submit" value="Отправить" name="sbmtbtn" id="submit-btn" class="sbmt")
+                div(class="pcdata" style="display:-webkit-flex;display:-ms-flexbox;display:flex;")
+                  input(type="checkbox" id="accept_submit")
+                  p
+                    Согласен на обработку
+                    a(href="" target="_blank") персональных данных
+                input(type="submit" value="Отправить" name="sbmtbtn" id="submit-btn" class="sbmt" disabled)                
                 label *Наш специалист свяжется с вами в ближайшее время
+            h3.rekvizit Наши реквизиты
+            ul.recviziti
+              li Юридический адрес: 145100, М.О. г. Подольск, ул&nbsp;Большая Серпуховская, д. 96а, стр21
+              li Почтовый адрес: : 145100, М.О. г. Подольск, ул&nbsp;Большая Серпуховская, д. 96а, стр21
+              li ИНН 575105707002
+              li ОГРНИП 316507400067831
+              li Р/сч: 40802810700490000416
+              li в&nbsp;ПАО &laquo;МОСКОВСКИЙ КРЕДИТНЫЙ БАНК&raquo; г. Москва, Луков переулок, д.&nbsp;2, стр 1
+              li к/счет 30101810745250000659
+              li БИК 044525659
     footer
       .wrap-footer
         Редизайн 2017г <br/>  Связаться с нами можно по телефонам: +7 (495) 9224044,  +7 (985) 9224044<br/> Сайт в разработке

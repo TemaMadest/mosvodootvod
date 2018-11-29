@@ -4,6 +4,7 @@
   var SendPrice = $('input[name="price"]');
   var SendService = $('input[name="service"]');
   var SendTitle = $('div#chooice');
+  var accept = $('#accept_submit');
   
   var handler = function(e){
     
@@ -23,5 +24,12 @@
     btn_service.on('click', handler);
   }
   
+  accept.on('change', function(){
+    if($(this).prop('checked') === true){
+      $(this).parents().parents().find('input[type="submit"]').prop("disabled", false);
+    }else{
+      $(this).parents().parents().find('input[type="submit"]').prop("disabled", true);
+    }
+  });
   
 }());

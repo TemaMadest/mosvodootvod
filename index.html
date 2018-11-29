@@ -405,7 +405,7 @@
       <div class="wrap-WhereMaps">
         <h2>Где мы находимся</h2>
         <p class="subtitle">Вы можете как позвонить нам на номер +7 (495) 9224044,<br/>написать нам письмо, так и приехать к нам в офис</p>
-        <div id="maps" style="width: 1200px; height: 650px">
+        <div id="maps" style="width: 1200px; height: 1000px">
           <div class="layout-right">
             <h3 class="adres">Нашы адреса:</h3>
             <ul>
@@ -431,10 +431,25 @@
                 <input type="text" name="fio" placeholder="Ваше ФИО" class="fio-place">
                 <input type="email" name="email" placeholder="Ваш e-mail" class="email-place">
                 <textarea name="text" placeholder="Ваше сообщение" class="text-place"></textarea>
-                <input type="submit" value="Отправить" name="sbmtbtn" id="submit-btn" class="sbmt">
+                <div style="display:-webkit-flex;display:-ms-flexbox;display:flex;" class="pcdata">
+                  <input type="checkbox" id="accept_submit">
+                  <p>Согласен на обработку<a href="" target="_blank">персональных данных</a></p>
+                </div>
+                <input type="submit" value="Отправить" name="sbmtbtn" id="submit-btn" disabled class="sbmt">
                 <label>*Наш специалист свяжется с вами в ближайшее время</label>
               </form>
             </div>
+            <h3 class="rekvizit">Наши реквизиты</h3>
+            <ul class="recviziti">
+              <li>Юридический адрес: 145100, М.О. г. Подольск, ул&nbsp;Большая Серпуховская, д. 96а, стр21</li>
+              <li>Почтовый адрес: : 145100, М.О. г. Подольск, ул&nbsp;Большая Серпуховская, д. 96а, стр21</li>
+              <li>ИНН 575105707002</li>
+              <li>ОГРНИП 316507400067831</li>
+              <li>Р/сч: 40802810700490000416</li>
+              <li>в&nbsp;ПАО &laquo;МОСКОВСКИЙ КРЕДИТНЫЙ БАНК&raquo; г. Москва, Луков переулок, д.&nbsp;2, стр 1</li>
+              <li>к/счет 30101810745250000659</li>
+              <li>БИК 044525659</li>
+            </ul>
           </div>
         </div>
       </div>

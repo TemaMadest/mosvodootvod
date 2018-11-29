@@ -24,14 +24,16 @@ var Maps = (function(){
     
     
   if(typeof ymaps !== "undefined"){
-    if(isMobile.any){
+    /*if(isMobile.any){
       var mobilemaps = new Image();
       mobilemaps.src = "http://maps.google.com/maps/api/staticmap?size=1200x650&markers=label:1|color:blue|55.860661,37.483041&markers=label:2|color:red|55.676108,37.526313&markers=label:2|color:yellow|55.762515,37.709784&markers=label:2|color:green|55.569866,37.596228";
       mobilemaps.style.height = "100%";
       $('#maps').append(mobilemaps);
     }else{
       ymaps.ready(init);
-    }
+    }*/
+
+    ymaps.ready(init);
   }
 
   
